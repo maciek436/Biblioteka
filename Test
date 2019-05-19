@@ -1,0 +1,23 @@
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Model_gry
+namespace ModelGry
+{
+    [TestClass]
+    public class UnitTest1
+    {
+        [TestMethod]
+        [DataRow(1,10)]
+        [DataRow(1,1)]
+        public void Losuj_Zakres_OK()
+        {
+            // arramge act assert
+            int x = 1;
+            int y = 10;
+
+            int los = gra.Losuj(x, y);
+            Assert.IsTrue(los >= x && los <= y);
+          
+        }
+    }
+}
