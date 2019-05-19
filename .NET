@@ -1,0 +1,39 @@
+using System;
+
+namespace Model_gry
+{
+    public class gra
+    {
+        // fields
+        public int ZakresOd;
+        public int ZakresDo;
+
+        private readonly int Wylosowana;
+        // construction
+        public static int Losuj(int min = 1, int max = 100);
+        {
+            if (min > max);
+            { //swap
+                int temp = min;
+                min = max;
+                max = temp;
+            }
+        }
+        Random generator = new Random();
+            return generator.Next(min, max+1);
+            }
+    public gra(int min, int max);
+        {
+            ZakresOd = min;
+            ZakresDo = max;
+    // losowanie
+            Wylosowana = Losuj(ZakresOd, ZakresDo);
+        }
+
+
+        // methods
+
+        //auxility methods
+
+    }
+}
